@@ -1,9 +1,51 @@
 import React from 'react';
+import quizkit from '../../image/quizkit.png';
+import kitoskill from '../../image/kitoskill.png';
+import travelaro from '../../image/travelaro.png';
+import rebooks from '../../image/rebooks.png';
+import { BsGithub } from 'react-icons/bs';
 
 const Projects = () => {
+
+  const projects = [
+    {
+      name: 'QuizKit - Online Quiz application',
+      photo: quizkit,
+      live: 'https://quizkit.netlify.app/',
+      github: 'https://github.com/AbdullahAlAnasSaimon/Quizkit'
+    },
+    {
+      name: 'KitoSkill - Learning platform',
+      photo: kitoskill,
+      live: 'https://kito-skill.web.app/',
+      github: 'https://github.com/AbdullahAlAnasSaimon/Quizkit'
+    },
+    {
+      name: 'Travelaro - Personal travel agency',
+      photo: travelaro,
+      live: 'https://travelaro-be1ed.web.app/',
+      github: 'https://github.com/AbdullahAlAnasSaimon/Quizkit'
+    },
+    {
+      name: 'ReBooks - Books Resell Platform',
+      photo: rebooks,
+      live: 'https://rebooks-f1684.web.app/',
+      github: 'https://github.com/AbdullahAlAnasSaimon/Quizkit'
+    },
+  ]
+
   return (
-    <div>
-      <h2>Projects</h2>
+    <div className='w-full md:w-11/12 mx-auto'>
+      <h2 className='text-2xl text-center font-semibold'>Projects</h2>
+      <div className='grid grid-cols-1 md:grid-cols-2 gap-5 mt-10'>
+        {projects.map(pro => <div className='h-[350px] border rounded-md'>
+          <img src={pro.photo} alt="" className='rounded-md' />
+          <div>
+            <a href={pro.live} target={'_blank'} rel='noreferrer'><button className=''>Live Site</button></a>
+            <a href="https://github.com/AbdullahAlAnasSaimon/Quizkit" target={'_blank'} rel='noreferrer'><BsGithub className='inline-block' /></a>
+          </div>
+        </div>)}
+      </div>
     </div>
   );
 };

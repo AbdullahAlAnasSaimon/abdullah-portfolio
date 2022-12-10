@@ -21,7 +21,7 @@ const Home = () => {
         <a href='https://drive.google.com/file/d/1-640XGzasvFDojVoQLQPqJXKLfH_emQS/view?usp=share_link' target='_blank' rel="noreferrer" download><button className='rounded-full bg-slate-700 hover:bg-slate-600 text-white px-4 py-2 text-md duration-300 mt-5' >Download Resume</button></a>
       </div>
       <div className='relative'>
-        <img src={myImg} alt="" className='mx-auto block w-96 md:w-auto border-2 bg-white rounded-full' />
+        <img src={myImg} alt="" className='mx-auto block w-96 md:w-auto border-4 bg-white rounded-full' />
       </div>
     </div>
   );
