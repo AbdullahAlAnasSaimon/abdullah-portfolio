@@ -20,14 +20,14 @@ const Header = () => {
           </div>
           <div className='hidden lg:flex'>
             <ul className="menu menu-horizontal p-1 border-dashed border-2 border-gray-50/0 hover:border-slate-200 rounded-full duration-300">
-              <li className='mr-3 rounded-none'><NavLink to='/' className='p-3 !rounded-full'><HiHome className='text-2xl' /></NavLink></li>
-              <li className='mr-3'><NavLink to='/about' className='p-3 !rounded-full'><TiUser className='text-2xl' /></NavLink></li>
-              <li><NavLink to='/projects' className='p-3 !rounded-full'><HiFolder className='text-2xl' /></NavLink></li>
+              <li className='mr-3 rounded-none'><NavLink to='/' className='p-2 !rounded-full'><HiHome className='text-2xl' /></NavLink></li>
+              <li className='mr-3'><NavLink to='/about' className='p-2 !rounded-full'><TiUser className='text-2xl' /></NavLink></li>
+              <li><NavLink to='/projects' className='p-2 !rounded-full'><HiFolder className='text-2xl' /></NavLink></li>
             </ul>
           </div>
         </div>
         <div className="navbar-end transform-none">
-          <Link to='/contact' className="btn btn-outline rounded-full border-2 transform-none">Contact Me</Link>
+          <Link to='/contact' className="rounded-full border-2 border-slate-700 hover:bg-slate-700 hover:text-white px-3 py-1 text-md duration-300">Contact Me</Link>
         </div>
       </div>
     </div>
