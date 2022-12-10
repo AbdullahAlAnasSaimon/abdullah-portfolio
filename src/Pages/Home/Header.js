@@ -27,7 +27,7 @@ const Header = () => {
           </div>
         </div>
         <div className="navbar-end transform-none">
-          <a href='https://form.jotform.com/223431171543043' className="rounded-full border-2 border-slate-700 hover:bg-slate-700 hover:text-white px-3 py-1 text-md duration-300">Contact Me</a>
+          <a href='https://form.jotform.com/223431171543043' target={'_blank'} className="rounded-full border-2 border-slate-700 hover:bg-slate-700 hover:text-white px-3 py-1 text-md duration-300" rel='noreferrer'>Contact Me</a>
         </div>
       </div>
     </div>

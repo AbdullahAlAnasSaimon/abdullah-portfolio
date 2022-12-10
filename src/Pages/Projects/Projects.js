@@ -18,19 +18,19 @@ const Projects = () => {
       name: 'KitoSkill - Learning platform',
       photo: kitoskill,
       live: 'https://kito-skill.web.app/',
-      github: 'https://github.com/AbdullahAlAnasSaimon/Quizkit'
+      github: 'https://github.com/AbdullahAlAnasSaimon/KitoSkill-Client'
     },
     {
       name: 'Travelaro - Personal travel agency',
       photo: travelaro,
       live: 'https://travelaro-be1ed.web.app/',
-      github: 'https://github.com/AbdullahAlAnasSaimon/Quizkit'
+      github: 'https://github.com/AbdullahAlAnasSaimon/Travelaro-client'
     },
     {
       name: 'ReBooks - Books Resell Platform',
       photo: rebooks,
       live: 'https://rebooks-f1684.web.app/',
-      github: 'https://github.com/AbdullahAlAnasSaimon/Quizkit'
+      github: 'https://github.com/AbdullahAlAnasSaimon/Rebooks-client'
     },
   ]
 
@@ -38,11 +38,13 @@ const Projects = () => {
     <div className='w-full md:w-11/12 mx-auto'>
       <h2 className='text-2xl text-center font-semibold'>Projects</h2>
       <div className='grid grid-cols-1 md:grid-cols-2 gap-5 mt-10'>
-        {projects.map(pro => <div className='h-[350px] border rounded-md'>
-          <img src={pro.photo} alt="" className='rounded-md' />
-          <div>
-            <a href={pro.live} target={'_blank'} rel='noreferrer'><button className=''>Live Site</button></a>
-            <a href="https://github.com/AbdullahAlAnasSaimon/Quizkit" target={'_blank'} rel='noreferrer'><BsGithub className='inline-block' /></a>
+        {projects.map(pro => <div className='h-[320px] border rounded-md'>
+          <div className='h-[260px] border-b'>
+            <img src={pro.photo} alt="" className='rounded-md' />
+          </div>
+          <div className='hero-content p-[10px] justify-start'>
+            <a href={pro.live} target={'_blank'} rel='noreferrer'><button className='px-4 py-2 bg-slate-700 hover:bg-slate-600 duration-300 text-white rounded-md'>Live Site</button></a>
+            <a href={pro.github} target={'_blank'} rel='noreferrer'><button className='px-4 py-2 bg-slate-700 hover:bg-slate-600 duration-300 text-white ml-4 rounded-md'><BsGithub className='inline-block text-xl'/></button></a>
           </div>
         </div>)}
       </div>
