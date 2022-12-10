@@ -8,7 +8,7 @@ import { router } from './Routes/Router';
 function App() {
   const {theme} = useContext(ThemeContext);
   return (
-    <div className="max-w-[1440px] mx-auto" data-theme={theme}>
+    <div className="w-full !h-full mx-auto" data-theme={theme}>
       <RouterProvider router={router}></RouterProvider>
     </div>
   );

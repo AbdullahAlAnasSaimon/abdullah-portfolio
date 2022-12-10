@@ -4,7 +4,7 @@ import about from '../../image/abdullah-banner.jpg';
 const About = () => {
   return (
     <div className='w-11/12 mx-auto'>
-      <div className='grid grid-cols-1 md:grid-cols-2 gap-10 my-10'>
+      <div className='grid grid-cols-1 md:grid-cols-2 gap-10 py-10'>
         <div className='border-4'>
           <img src={about} alt="" className='h-full w-auto rounded-2xl p-2' />
         </div>

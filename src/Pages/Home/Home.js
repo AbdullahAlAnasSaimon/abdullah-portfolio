@@ -1,10 +1,11 @@
 import React from 'react';
 import myImg from '../../image/saimon-removebg-preview.png';
 import Typewriter from 'typewriter-effect';
+import {FaFacebook, FaGithub, FaLinkedin} from 'react-icons/fa';
 
 const Home = () => {
   return (
-    <div className='grid grid-cols-1 md:grid-cols-2 w-10/12 mx-auto hero-content max-h-screen'>
+    <div className='grid grid-cols-1 md:grid-cols-2 w-10/12 mx-auto hero-content h-full md:!h-screen'>
       <div className='text-center md:text-left my-10 md:my-0'>
         <h4 className='text-xl'>Hi, I'm</h4>
         <h1 className='text-4xl font-bold my-3'>Abdullah Al Anas Saimon</h1>
@@ -18,10 +19,13 @@ const Home = () => {
           }}
         />
         </div>
-        <a href='https://drive.google.com/file/d/1-640XGzasvFDojVoQLQPqJXKLfH_emQS/view?usp=share_link' target='_blank' rel="noreferrer" download><button className='rounded-full bg-slate-700 hover:bg-slate-600 text-white px-4 py-2 text-md duration-300 mt-5' >Download Resume</button></a>
+        <a href='https://drive.google.com/file/d/1-640XGzasvFDojVoQLQPqJXKLfH_emQS/view?usp=share_link' target='_blank' rel="noreferrer" download><button className='rounded-full border-2 bg-slate-700 hover:bg-slate-100 hover:text-slate-700 hover:border-slate-700 text-white px-4 py-2 text-md duration-300 mt-5' >Download Resume</button></a>
       </div>
       <div className='relative'>
         <img src={myImg} alt="" className='mx-auto block w-96 md:w-auto border-4 dark:bg-white light:bg-slate-500 rounded-full' />
+        <a href="https://www.facebook.com/abdullahalanassaimon/" target='_blank'><FaFacebook className='absolute top-[110px] left-[48px] text-4xl text-blue-500 hidden lg:block'/></a>
+        <a href="https://www.linkedin.com/in/abdullahalanassaimon/" target='_blank'><FaLinkedin className='absolute top-[60px] right-[44px] text-4xl text-blue-700 hidden lg:block'/></a>
+        <a href="https://github.com/AbdullahAlAnasSaimon/" target='_blank'><FaGithub className='absolute left-[170px] bottom-0 text-4xl text-slate-700 hidden lg:block'/></a>
       </div>
     </div>
   );
