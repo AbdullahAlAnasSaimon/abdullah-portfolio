@@ -3,6 +3,7 @@ import { NavLink } from 'react-router-dom';
 import { TiUser } from 'react-icons/ti';
 import { HiFolder, HiHome } from 'react-icons/hi';
 import { ThemeContext } from '../../Context/ThemeProvider';
+import { FaBloggerB } from 'react-icons/fa';
 
 const Header = () => {
   const {theme, setTheme} = useContext(ThemeContext);
@@ -17,7 +18,8 @@ const Header = () => {
             <ul tabIndex={0} className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-full w-auto">
               <li className='mb-2'><NavLink to='/' className='p-2 !rounded-full'><HiHome className='text-xl' /></NavLink></li>
               <li className='mb-2'><NavLink to='/about' className='p-2 !rounded-full'><TiUser className='text-xl' /></NavLink></li>
-              <li><NavLink to='/projects' className='p-2 !rounded-full'><HiFolder className='text-xl' /></NavLink></li>
+              <li className='mb-2'><NavLink to='/projects' className='p-2 !rounded-full'><HiFolder className='text-xl' /></NavLink></li>
+              <li><NavLink to='/blog' className='p-2 !rounded-full'><FaBloggerB className='text-xl' /></NavLink></li>
             </ul>
           </div>
           <div className='hidden lg:flex'>
@@ -30,6 +32,9 @@ const Header = () => {
               </div>
               <div className="tooltip tooltip-bottom" data-tip="My Projects">
                 <li className='mr-3'><NavLink to='/projects' className='p-2 !rounded-full'><HiFolder className='text-2xl text-slate-700' /></NavLink></li>
+              </div>
+              <div className="tooltip tooltip-bottom" data-tip="Blogs">
+                <li className='mr-3'><NavLink to='/blog' className='p-2 !rounded-full'><FaBloggerB className='text-2xl text-slate-700' /></NavLink></li>
               </div>
               <div className="tooltip tooltip-bottom" data-tip={theme}>
                 <li><label className="swap swap-rotate !rounded-full p-2">

@@ -1,6 +1,7 @@
 import { createBrowserRouter } from "react-router-dom";
 import Main from "../Layout/Main";
 import About from "../Pages/About/About";
+import Blog from "../Pages/Blog/Blog";
 import Contact from "../Pages/Contact/Contact";
 import Home from "../Pages/Home/Home";
 import ProjectDetails from "../Pages/ProjectDetails/ProjectDetails";
@@ -22,12 +23,16 @@ export const router = createBrowserRouter([
       {
         path: '/projects',
         element: <Projects></Projects>,
-        loader: () => fetch('http://localhost:5000/projects')
+        loader: () => fetch('https://abdullah-portfolio-server.vercel.app/projects')
+      },
+      {
+        path: '/blog',
+        element: <Blog></Blog>
       },
       {
         path: '/project-details/:id',
         element: <ProjectDetails></ProjectDetails>,
-        loader: ({params}) => fetch(`http://localhost:5000/project-details/${params.id}`)
+        loader: ({params}) => fetch(`https://abdullah-portfolio-server.vercel.app/project-details/${params.id}`)
       },
       {
         path: '/contact',
