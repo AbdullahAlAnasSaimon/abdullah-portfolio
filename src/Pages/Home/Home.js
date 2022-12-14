@@ -8,14 +8,14 @@ const Home = () => {
     <div className='flex hero-content w-11/12 mx-auto'>
       <div className='w-[25px] hidden lg:block'>
         <ul className='text-center h-[230px] w-[25px]'>
-          <li><a href="https://www.facebook.com/abdullahalanassaimon/" target='_blank'><FaFacebook className='text-2xl text-blue-500 hidden lg:block text-center my-4' /></a></li>
-          <li><a href="https://www.linkedin.com/in/abdullahalanassaimon/" target='_blank'><FaLinkedin className='text-2xl text-blue-700 hidden lg:block my-4' /></a></li>
-          <li><a href="https://github.com/AbdullahAlAnasSaimon/" target='_blank'><FaGithub className='text-2xl text-slate-500 hidden lg:block my-4' /></a></li>
+          <li><a href="https://www.facebook.com/abdullahalanassaimon/" target='_blank'><FaFacebook className='text-2xl text-blue-500 hidden lg:block text-center my-4 p-[2px] bg-white hover:bg-gray-200 duration-300 rounded-full' /></a></li>
+          <li><a href="https://www.linkedin.com/in/abdullahalanassaimon/" target='_blank'><FaLinkedin className='text-2xl text-blue-700 hidden lg:block my-4 p-[2px] bg-white hover:bg-gray-200 duration-300 rounded-sm' /></a></li>
+          <li><a href="https://github.com/AbdullahAlAnasSaimon/" target='_blank'><FaGithub className='text-2xl text-slate-500 hidden lg:block my-4 p-[2px] bg-white hover:bg-gray-200 duration-300 rounded-full' /></a></li>
         </ul>
         <p className='rotate-[270deg] whitespace-nowrap font-bold'>Follow Me On</p>
       </div>
       <div className='grid grid-cols-1 md:grid-cols-2 hero-content h-full md:!h-screen'>
-        <div className='text-center md:text-left my-10 md:my-0'>
+        <div className='text-center md:text-left my-10 md:my-0 ml-0 md:ml-7'>
           <h4 className='text-xl'>Hi, I'm</h4>
           <h1 className='text-4xl font-bold my-3'>Abdullah Al Anas Saimon</h1>
 
